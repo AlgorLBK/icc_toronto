@@ -1,0 +1,40 @@
+.footer-container {
+    display: grid;
+    grid-template-areas: 'left right';
+    background-color: black;
+    padding: 25px 70px;
+}
+.left-footer {
+    grid-area: left;
+}
+
+.right-footer {
+    grid-area: right;
+    text-align: right;
+}
+.footer-text {
+    text-decoration: none;
+    color: white;
+}
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+.footer-link:hover {
+    font-size: 19px;
+}
+.footer-logo {
+    width: 20px;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-areas: 'left' 'right';
+    }
+    .right-footer {
+        text-align: center;
+    }
+    .left-footer {
+        text-align: center;
+    }
+}
